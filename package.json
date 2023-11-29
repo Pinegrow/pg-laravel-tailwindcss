@@ -32,6 +32,7 @@
     "@types/node": "^20.10.0",
     "@unocss/preset-icons": "^0.57.7",
     "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/devtools": "^6.5.1",
     "@vue/server-renderer": "^3.2.31",
     "autoprefixer": "^10.4.7",
     "axios": "^1.6.1",

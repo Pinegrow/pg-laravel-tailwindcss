@@ -86,6 +86,7 @@ export default defineConfig({
 
     liveDesigner({
       iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names
+      devtoolsKey: 'devtools',
       devServerUrls: {
         local: 'http://127.0.0.1:8000/', // App-server URL
       },
