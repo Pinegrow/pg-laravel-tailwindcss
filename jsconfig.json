@@ -5,7 +5,9 @@
       "@/*": ["./resources/js/*"],
       "~/*": ["resources/js/*"],
       "~~/*": ["*"]
-    }
+    },
+    "strict": false,
+    "allowJs": true
   },
   "exclude": ["node_modules", "public"]
 }
