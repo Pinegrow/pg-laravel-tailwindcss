@@ -22,6 +22,10 @@ yarn-error.log
 !.vscode/extensions.json
 !.vscode/settings.json
 
+# macOS-specific files
+.DS_Store
+.unlighthouse
+
 # Pinegrow
 _pgbackup
 _pginfo
