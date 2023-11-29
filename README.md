@@ -1,8 +1,21 @@
-# Vue Designer Laravel Inertiajs Tailwind CSS - Quick start template
+# Vue Designer Laravel Tailwind CSS - Quick start template
 
 This is a starter template that pre-includes the [Pinegrow Vite Plugin](https://www.npmjs.com/package/@pinegrow/vite-plugin), [Pinegrow Tailwind CSS Plugin](https://www.npmjs.com/package/@pinegrow/tailwindcss-plugin) and other goodies for Vue Designer.
 
-Demo - https://pg-laravel-tailwindcss.netlify.app/
+<div style="display: flex;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/985px-Laravel.svg.png" alt="Laravel Logo" style="width: 40px;">
+  <img src="https://user-images.githubusercontent.com/79047182/222930653-4c8079bc-30f0-43e1-9c63-b50a9ad68320.png" alt="image" style="width: 40px;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" alt="Vue.js Logo" style="width: 40px;">
+ <img src="https://ih1.redbubble.net/image.2428884987.0603/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="Redbubble Image" style="width: 40px;">
+</div>
+<br>
+
+[Laravel Jetstream](https://jetstream.laravel.com/introduction.html) - This template is one of the Jetstream starter-kit that uses [TailwindCSS](https://tailwindcss.com/docs/guides/vite#vue) and [Inertiajs](https://inertiajs.com/).
+
+- Jetstream provides the implementation for your application's login, registration, email verification, two-factor authentication, session management, API via Laravel Sanctum, and optional team management features.
+- The application is designed to provide a smooth and interactive user experience.
+- This SPA offers an all-in-one solution for managing users and roles, featuring an easy-to-use dashboard for administrators.
+- Refer to the official documentation to learn about all the features.
 
 This template has the PHP application server configured (instead of Vite which is used as a middleware) in Pinegrow Vite Plugin, to enable live-designing of Vue components of this laravel/inertia project. It also configures the custom folder setup & the default start-up page of the app.
 
@@ -80,12 +93,6 @@ npm run dev #in first terminal
 php artisan serve #in second terminal
 ```
 
-### Preview
-
-```bash
-npm run now # build & preview
-```
-
 ### Lighthouse
 
 ```bash
@@ -97,15 +104,6 @@ npm run unlighthouse # Uses npx unlighthouse from https://unlighthouse.dev/ to r
 ```bash
 npm run build
 ```
-
-And you will see the generated file in `dist` that's ready to be served.
-
-### Deploy to Netlify
-
-You can deploy this repo as a site on your own to explore and experiment with, by clicking this button.
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Pinegrow/pg-laravel-tailwindcss)
-
-Check out the [deployment documentation](https://vitejs.dev/guide/static-deploy.html#netlify) for more information.
 
 ## Pre-packed
 
