@@ -9,6 +9,7 @@ import AutoImportComponents from 'unplugin-vue-components/vite'
 import AutoImportAPIs from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
+// import VueDevTools from 'vite-plugin-vue-devtools'
 
 export default defineConfig({
   plugins: [
@@ -83,6 +84,9 @@ export default defineConfig({
         },
       },
     }),
+
+    /* Don't use Vite devtools and Vue devtools at the same time */
+    // VueDevTools(),
 
     liveDesigner({
       iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names
