@@ -59,8 +59,8 @@ export default defineConfig({
         // 'vue-i18n',
         // 'vue/macros',
         // '@vueuse/head',
-        // '@vueuse/core',
-        // 'pinia',
+        '@vueuse/core',
+        'pinia',
       ],
       dirs: [
         /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
@@ -109,6 +109,15 @@ export default defineConfig({
         // restartOnConfigUpdate: true,
         restartOnThemeUpdate: true,
       },
+      // plugins: [
+      //   {
+      //     name: 'My Awesome Lib 3.0',
+      //     key: 'my-awesome-lib',
+      //     pluginPath: fileURLToPath(
+      //       new URL('./my-awesome-lib/web-types.json', import.meta.url),
+      //     ),
+      //   },
+      // ],
       //...
     }),
   ],
