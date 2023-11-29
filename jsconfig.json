@@ -9,5 +9,12 @@
     "strict": false,
     "allowJs": true
   },
+  "include": [
+    //...
+    /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
+
+    "components.d.ts",
+    "auto-imports.d.ts"
+  ],
   "exclude": ["node_modules", "public"]
 }

@@ -5,6 +5,8 @@ import laravel from 'laravel-vite-plugin'
 
 import vue from '@vitejs/plugin-vue'
 import { liveDesigner } from '@pinegrow/vite-plugin'
+import AutoImportComponents from 'unplugin-vue-components/vite'
+import AutoImportAPIs from 'unplugin-auto-import/vite'
 
 export default defineConfig({
   plugins: [
@@ -21,6 +23,48 @@ export default defineConfig({
         },
       },
     }),
+    // For details, refer to https://github.com/antfu/unplugin-vue-components#configuration
+    AutoImportComponents({
+      /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
+
+      dirs: ['resources/js/Components'],
+
+      // allow auto load markdown components under ./src/components/
+      extensions: ['vue', 'md'],
+
+      // allow auto import and register components used in markdown
+      include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
+
+      // resolvers: [], // Auto-import using resolvers
+      dts: 'components.d.ts',
+    }),
+    // For details, refer to https://github.com/antfu/unplugin-auto-import#configuration
+    AutoImportAPIs({
+      include: [
+        /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
+        /\.vue$/,
+        /\.vue\?vue/, // .vue
+        /\.md$/, // .md
+        // /\.mdx$/, // .mdx
+      ],
+      imports: [
+        'vue',
+        'vue-router',
+        // 'vue-i18n',
+        // 'vue/macros',
+        // '@vueuse/head',
+        // '@vueuse/core',
+        // 'pinia',
+      ],
+      dirs: [
+        /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
+        // 'src/composables',
+        // 'src/utils',
+        // 'src/stores',
+      ],
+      vueTemplate: true,
+      dts: 'auto-imports.d.ts',
+    }),
     liveDesigner({
       iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names
       devServerUrls: {
@@ -33,6 +77,14 @@ export default defineConfig({
         components: 'resources/js/Components',
       },
       startupPage: '@/Pages/Welcome.vue',
+      tailwindcss: {
+        /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
+        configPath: 'tailwind.config.js',
+        cssPath: 'resources/css/app.css',
+        // themePath: false, // Set to false so that Design Panel is not used
+        // restartOnConfigUpdate: true,
+        restartOnThemeUpdate: true,
+      },
       //...
     }),
   ],
