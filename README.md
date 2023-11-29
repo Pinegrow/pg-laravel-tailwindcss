@@ -21,6 +21,7 @@ This template has the PHP application server configured (instead of Vite which i
 
 ```js
 liveDesigner({
+    //... existing config parameters
     devServerUrls: {
         local: "http://127.0.0.1:8000/",
     },
@@ -57,16 +58,6 @@ If you prefer to do it manually with the cleaner git history
 
 ```bash
 npx giget@latest gh:pinegrow/pg-laravel-tailwindcss my-laravel-tailwindcss-app #project-name
-cd my-laravel-tailwindcss-app
-npm install #or use pnpm
-```
-
-(or)
-
-If you prefer a blank template (a single empty home page) instead,
-
-```bash
-npx giget@latest gh:pinegrow/pg-laravel-tailwindcss#blank my-laravel-tailwindcss-app #project-name
 cd my-laravel-tailwindcss-app
 npm install #or use pnpm
 ```
