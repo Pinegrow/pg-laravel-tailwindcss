@@ -1,3 +1,5 @@
+import 'uno.css'
+
 import './bootstrap'
 import '../css/app.css'
 

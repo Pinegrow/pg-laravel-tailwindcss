@@ -7,6 +7,8 @@ import vue from '@vitejs/plugin-vue'
 import { liveDesigner } from '@pinegrow/vite-plugin'
 import AutoImportComponents from 'unplugin-vue-components/vite'
 import AutoImportAPIs from 'unplugin-auto-import/vite'
+import Unocss from 'unocss/vite'
+import presetIcons from '@unocss/preset-icons'
 
 export default defineConfig({
   plugins: [
@@ -15,6 +17,7 @@ export default defineConfig({
       ssr: 'resources/js/ssr.js',
       refresh: true,
     }),
+
     vue({
       template: {
         transformAssetUrls: {
@@ -23,6 +26,7 @@ export default defineConfig({
         },
       },
     }),
+
     // For details, refer to https://github.com/antfu/unplugin-vue-components#configuration
     AutoImportComponents({
       /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
@@ -38,6 +42,7 @@ export default defineConfig({
       // resolvers: [], // Auto-import using resolvers
       dts: 'components.d.ts',
     }),
+
     // For details, refer to https://github.com/antfu/unplugin-auto-import#configuration
     AutoImportAPIs({
       include: [
@@ -65,6 +70,20 @@ export default defineConfig({
       vueTemplate: true,
       dts: 'auto-imports.d.ts',
     }),
+
+    Unocss({
+      presets: [
+        presetIcons({
+          prefix: 'i-', // default prefix, do not change
+        }),
+      ],
+      content: {
+        pipeline: {
+          include: ['./resources/**/*'],
+        },
+      },
+    }),
+
     liveDesigner({
       iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names
       devServerUrls: {
@@ -88,6 +107,7 @@ export default defineConfig({
       //...
     }),
   ],
+
   resolve: {
     alias: {
       /* Must be either an object, or an array of { find, replacement, customResolver } pairs. */
