@@ -18,8 +18,8 @@
     "type-check": "vue-tsc --noEmit",
     "vue-devtools": "vue-devtools",
     "lint": "npm run lint:fix && npm run format",
-    "lint:fix": "eslint ./resources --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write ./resources/js ./resources/css !public"
+    "lint:fix": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "format": "prettier --write . !public"
   },
   "devDependencies": {
     "@inertiajs/vue3": "^1.0.0",
