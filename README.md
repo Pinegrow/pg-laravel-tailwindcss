@@ -1,5 +1,7 @@
 # Vue Designer Laravel Tailwind CSS - Quick start template
 
+Youtube video tutorial here - https://youtu.be/VusO1I5AqIc
+
 This is a starter template that pre-includes the [Pinegrow Vite Plugin](https://www.npmjs.com/package/@pinegrow/vite-plugin), [Pinegrow Tailwind CSS Plugin](https://www.npmjs.com/package/@pinegrow/tailwindcss-plugin) and other goodies for Vue Designer.
 
 <div style="display: flex;">
@@ -84,16 +86,22 @@ npm run dev #in first terminal
 php artisan serve #in second terminal
 ```
 
-### Lighthouse
-
-```bash
-npm run unlighthouse # Uses npx unlighthouse from https://unlighthouse.dev/ to run lighthouse on entire site (all pages)
-```
-
 ### Build
 
 ```bash
 npm run build
+```
+
+### Analyze
+
+```bash
+npm run analyze # bundle sizes
+```
+
+### Lighthouse
+
+```bash
+npm run unlighthouse # Uses npx unlighthouse from https://unlighthouse.dev/ to run lighthouse on entire site (all pages)
 ```
 
 ## Pre-packed
