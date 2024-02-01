@@ -38,4 +38,6 @@ pinegrow.json
 ## add any d.ts files that are auto-generated, for eg,
 auto-imports.d.ts
 components.d.ts
-# composables.d.ts
+composables.d.ts
+## rollup visualizer
+stats.html
