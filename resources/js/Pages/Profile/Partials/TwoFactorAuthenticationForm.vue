@@ -162,9 +162,9 @@
             v-if="setupKey"
             class="mt-4 max-w-xl text-sm text-gray-600 dark:text-gray-400"
           >
-            <p class="font-semibold">
+            <div class="font-semibold">
               Setup Key: <span v-html="setupKey"></span>
-            </p>
+            </div>
           </div>
 
           <div v-if="confirming" class="mt-4">
