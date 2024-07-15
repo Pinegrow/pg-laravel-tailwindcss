@@ -150,10 +150,9 @@ npm run unlighthouse # Uses npx unlighthouse from https://unlighthouse.dev/ to r
 
 ### Devtools
 
+- [Vite Devtools](https://github.com/webfansplz/vite-plugin-vue-devtools) - A Vite plugin for Vue that enhances your DX (developer experience) with an amazing set of in-app features. This is an in-app alternative to browser-based/standalone Vue Devtools.
 - [Vue Devtools](https://devtools.vuejs.org/guide/installation.html#standalone) - Official devtools that can be used as a standalone app alongside Vue Designer. It's conditionally configured in `resources/js/app.js` (only during development).
   - **ACTION REQUIRED**: Currently deactivated. In `resources/js/app.js`, uncomment the top devtools related snippet to activate.
-- [Vite Devtools](https://github.com/webfansplz/vite-plugin-vue-devtools) - A Vite plugin for Vue that enhances your DX (developer experience) with an amazing set of in-app features. This is an in-app alternative to browser-based/standalone Vue Devtools.
-  - **ACTION REQUIRED**: Currently deactivated. In `vite.config.ts`, uncomment VueDevtools.
 
 ### VS Code Extensions
 
