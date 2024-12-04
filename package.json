@@ -2,15 +2,14 @@
   "name": "pg-laravel-tailwindcss",
   "version": "0.0.0",
   "homepage": "https://pg-laravel-tailwindcss.netlify.app",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/pinegrow/pg-laravel-tailwindcss.git"
   },
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "now": "npm run build && npm run preview",
-    "lighthouse:dev": "npx unlighthouse --no-cache --site http://127.0.0.1:8000",
     "lighthouse": "npx unlighthouse --no-cache --site https://pg-laravel-tailwindcss.netlify.app",
     "build": "vite build && vite build --ssr",
     "preview": "vite preview",
@@ -31,8 +30,8 @@
     "@iconify/json": "^2.2.149",
     "@inertiajs/vue3": "^1.0.0",
     "@nuxt/eslint-config": "^0.2.0",
-    "@pinegrow/tailwindcss-plugin": "^3.0.29",
-    "@pinegrow/vite-plugin": "^3.0.60",
+    "@pinegrow/tailwindcss-plugin": "^3.0.33",
+    "@pinegrow/vite-plugin": "^3.0.65",
     "@tailwindcss/forms": "^0.5.2",
     "@tailwindcss/typography": "^0.5.2",
     "@types/node": "^20.10.0",

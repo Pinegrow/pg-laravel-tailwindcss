@@ -1,0 +1,91 @@
+{
+  "files": {
+    "resources/js/Pages/Welcome.vue": {
+      "frameworks": [
+        "pg.tw.lib",
+        "vite-plugin-vue-devtools",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "project",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "vite-plugin-vue-layouts",
+        "app_designer",
+        "vue",
+        "@vitejs/plugin-vue",
+        "@pinegrow/vite-plugin",
+        "@vue/devtools",
+        "@unocss/preset-icons",
+        "unplugin-vue-components",
+        "unplugin-auto-import",
+        "unplugin-vue-router",
+        "tw",
+        "pg.html"
+      ]
+    },
+    "resources/js/Components/SampleCard.vue": {
+      "frameworks": [
+        "vite-plugin-vue-devtools",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "vite-plugin-vue-layouts",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "unplugin-vue-router",
+        "pg.code-validator",
+        "project",
+        "pg.project.items",
+        "unplugin-auto-import",
+        "pg.asset.manager",
+        "app_designer",
+        "vue",
+        "unplugin-vue-components",
+        "@vitejs/plugin-vue",
+        "@pinegrow/vite-plugin",
+        "@unocss/preset-icons",
+        "@vue/devtools",
+        "tw",
+        "pg.html"
+      ]
+    }
+  },
+  "template_framework_id": "vue",
+  "open-pages": ["resources/js/Pages/Welcome.vue"],
+  "breakpoints": ["640px", "768px", "1024px", "1280px", "1536px"],
+  "frameworks": [
+    "pg.tw.lib",
+    "vite-plugin-vue-devtools",
+    "pg.insight.events",
+    "pg.vue.tree.painter",
+    "project",
+    "pg.css.grid",
+    "pg.image.overlay",
+    "pg.code-validator",
+    "pg.project.items",
+    "pg.asset.manager",
+    "vite-plugin-vue-layouts",
+    "app_designer",
+    "vue",
+    "@vitejs/plugin-vue",
+    "@pinegrow/vite-plugin",
+    "@vue/devtools",
+    "@unocss/preset-icons",
+    "unplugin-vue-components",
+    "unplugin-auto-import",
+    "unplugin-vue-router",
+    "tw",
+    "pg.html"
+  ],
+  "urls": {
+    "resources/js/Pages/Welcome.vue": {
+      "open-page-views": [{ "w": 640, "h": 0 }]
+    },
+    "resources/js/Components/SampleCard.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    }
+  },
+  "recent-classes": ["bg-primary-600"]
+}
