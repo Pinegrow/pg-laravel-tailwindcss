@@ -60,7 +60,6 @@ export default defineConfig({
         'vue-router',
         // 'vue-i18n',
         // 'vue/macros',
-        // '@vueuse/head',
         '@vueuse/core',
         'pinia',
       ],
